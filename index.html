@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>background image with navbar</title>
+
+    <style>
+        .title{
+            font-family: "Sixtyfour", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+            "BLED" 0,
+            "SCAN" 0;
+            text-align: center;
+        }
+
+        body{
+            height: 100vh;
+            width: 100%;
+            background-image: url(./images/anime-landscape-background-12xkkc2cnstc3gp2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+
+        .navbar{
+            padding-top: 20px;
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        .elements{
+            display: inline-flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-right: 9%;
+            margin-left: 1%;
+            list-style-type: none;
+            
+        }
+        .logo{
+            color: #F8F7FD;
+            font-family: "Bebas Neue", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.5rem;
+        }
+
+        li a{
+            color: #F8F7FD;
+            font-family: "Bebas Neue", serif;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a{
+            transition: 0.4s ease;
+        }
+
+        a:hover{
+            color: #CD91D9;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        .button{
+            width: 100px;
+            color: #F8F7FD;
+            font-family: "Bebas Neue", serif;
+            font-weight: 400;
+            font-style: normal;
+            padding: 15px;
+            margin-bottom: 5px;
+            background-color: #8E76CC;
+            border: 1px solid #D598DC;
+            border-radius: 40px;
+            opacity: 1; 
+            transition: opacity 0.3s ease;
+        }
+
+        .button:hover{
+            opacity: 0.7;
+        }
+
+          /* Media Query for Mobile */
+          @media (max-width: 800px) {
+            .navbar {
+                flex-direction: column; /* Stack items vertically */
+                align-items: center;
+            }
+
+            .logo {
+                margin-bottom: 10px; /* Add some space below the logo on smaller screens */
+            }
+
+            .elements {
+                gap: 10px; /* Reduce gap between navbar items */
+                margin-left: 0;
+            }
+
+            .button {
+                width: 100px; /* Make button take full width on mobile */
+                margin-bottom: 10px; /* Add some space between buttons */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+         <h1 class="title">This is My Project</h1>
+    <nav class="navbar">
+        <div class="logo">Something-Cute.com</div>
+        <ul class="elements">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="button" type="button">Press Me !!</button>
+    </nav>
+    </header>
+   
+</body>
+</html>
